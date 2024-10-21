@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-́8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>week-2 unit</title>
+    </head>
+    
+    <body>
+    <!-- thẻ tiêu đề -->
+        Hello world
+        <h1>Nguyễn Xuân Trường</h1>
+        <h2>A.K.A Coconut</h2>
+        <h3>Photoshop</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        
+    <!-- thẻ văn bản -->
+        <p>This is a paragraph doi toi co don. Nen yeu ai cung co don</p>
+        
+    <!-- thẻ liên kết-->
+        <a href="https://google.com" target="_blank" >Google</a>
+        <a href="https://google.com" target="_self" >Google</a>
+        <h6></h6>
+
+    <!-- thẻ ảnh -->
+        <img
+            src="https://i.pinimg.com/originals/85/97/43/8597430660c7fec44b74cb3e695e7554.jpg"
+            width="500"
+            height="500"
+        />
+        <img
+            src="https://www.meme-arsenal.com/memes/d57849838dbdab4d17fb394e98f736f7.jpg"
+            wigth="300"
+            height="300"
+        />
+        <h6></h6>       
+        <img src="nen.jpg" alt="cyber city here"/>
+        <h6></h6>  
+        <img 
+            src="../images/em.jpg" 
+            wigth="500"
+            height="250"
+        />
+        <img src="../pages/em1.jpg" wigth="400" height="250"/>
+
+    <<!-- thẻ danh sách -->
+        <ul> <!-- không có thứ tự-->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol> <!-- có thứ tự-->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        
+    <!-- thẻ bảng -->
+        <table border="2">
+            <caption>Chi Tiết Sinh Viên</caption>
+            <tr>
+              <th>Hoten</th>
+              <th>Gioitinh</th>
+              <th>Que</th>
+            </tr>
+            <tr>
+              <td>Nuyen Van A</td>
+              <td>Nam</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Nguyen Thi B</td>
+              <td>Nu</td>
+              <td>Mexico</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+              <th colspan="2">Name</th> <!-- gộp các cột -->
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>57</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+              <th>Name</th>
+              <td>Jill</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Phone</th> <!-- gộp các hàng -->
+              <td>555-1234</td>
+            </tr>
+            <tr>
+              <td>555-8745</td>
+            </tr>
+        </table>
+
+    <!-- thẻ form -->
+        <form>
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" />
+        </form>
+
+        <form>
+            <label for="username">Username:</label><br />
+            <input type="text" id="username" name="username" /><br />
+            <label for="pwd">Password:</label><br />
+            <input type="password" id="pwd" name="pwd" />
+        </form>
+
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML" />
+            <label for="html">HTML</label><br />
+            <input type="radio" id="css" name="fav_language" value="CSS" />
+            <label for="css">CSS</label><br />
+            <input
+              type="radio"
+              id="javascript"
+              name="fav_language"
+              value="JavaScript"
+            />
+            <label for="javascript">JavaScript</label>
+        </form>
+
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> I have a bike</label><br />
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+            <label for="vehicle2"> I have a car</label><br />
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+            <label for="vehicle3"> I have a boat</label>
+        </form>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea>
+
+    <!-- thẻ button -->
+        <button type="button">Click Me!</button>
+
+    <!-- thẻ khối -->
+        <div style="background-color: #e12c7d">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+
+        <header>
+            <h1>Welcome to My Blog</h1>
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <nav>
+            <ul>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <footer>
+            <p>&copy; 2024 My Website. All Rights Reserved.</p>
+            <nav>
+              <a href="#privacy-policy">Privacy Policy</a> |
+              <a href="#terms">Terms of Service</a>
+            </nav>
+        </footer>
+
+        <style>
+            /* Tạo kiểu cách cho thuộc tính id "tiêuđề" */
+            #tiêuđề {
+             background-color: lightblue;
+             color: black;
+             padding: 40px;
+             text-align: center;
+            }
+            
+            /* Tạo kiểu cách cho tất cả phần tử bằng lớp "thànhphố" */
+            .thànhphố {
+             background-color: tomato;
+             color: white;
+             padding: 10px;
+            }
+        </style>
+            
+            <!-- Một phần tử duy nhất -->
+            <h1 id="tiêuđề">Thành phố của tôi</h1>
+            
+            <!-- Nhiều phần tử giống nhau -->
+            <h2 class="thànhphố">Hà Nội</h2>
+            <p>Hà Nội là thủ đô của Việt Nam.</p>
+            
+            <h2 class="thànhphố">Paris</h2>
+            <p>Paris là thủ đô của Pháp.</p>
+            
+            <h2 class="thànhphố">Tokyo</h2>
+            <p>Tokyo là thủ đô của Nhật Bản.</p>
+    </body>
+</html>
