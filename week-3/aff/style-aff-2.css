@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+}
+.container{
+    background-color: white;
+    margin: 200px 670px;
+    height: 420px;
+    width: 400px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px rgb(206, 206, 206);
+    font-family:"Roboto", sans-serif;
+}
+
+.note{
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+.email-password{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 40px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.button{
+    margin-top: 20px;
+    text-align: center;
+    background-color:blue;
+    height: 38px;
+    width: 350px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.link{margin-top: 15px;}
+
+a{text-decoration:none;}
+
+.right{
+    margin-left: 55px;
+    color: black;
+}
