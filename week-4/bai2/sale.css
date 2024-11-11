@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    width: 700px;
+    margin:50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image{
+    width: 100%;
+}
+
+.box{
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 5px 0px rgb(171, 171, 171);
+}
+
+.image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box h1{
+    color:rgb(73, 149, 174);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.price{
+    color: green;
+    font-weight: bold;
+    font-size: large;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.star{
+    color: rgb(239, 232, 46);
+    margin-right: 10px;
+}
+
+.tag-rate span{
+    background-color: rgb(158, 255, 255);
+    padding:5px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.tag-rate p{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.tag-rate i{
+    margin-right:5px;
+}
+
+.but-add{
+    padding:10px 15px 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(255, 64, 0);
+    color:rgb(255, 255, 255);
+    font-size: small;
+    border: 0px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+.infor ul{
+    margin: 10px 10px;
+    padding-left:10px;
+}
+
+
+.high-feature{
+    color:rgb(45, 130, 250);
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+
+.high-feature span{
+    color:rgb(81, 81, 81);
+    margin-left: 10px;
+}
+
+.guide-box h2{
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.guide-box .list i{
+    color: orange;
+}
+
+.guide-box .list span{
+    color:rgb(45, 130, 250);
+    margin-left: 10px;
+}
+
+.special-feature{
+    color: red;
+}
+
+.special-feature span{
+    color:rgb(81, 222, 52);
+    margin-left: 10px;
+}
+.list p{
+    margin-top:5px;
+}
+
+.list{
+    margin-bottom:15px;
+    margin-top: 15px;
+}
+
+.contact{
+    color:white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contact span{
+    padding:7px 15px 7px 15px;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+.contact i{
+    margin-right: 5px;
+}
+.contact span:first-child{
+    background-color: rgb(29, 35, 194);
+}
+
+.contact span:nth-child(2){
+    background-color: rgb(33, 179, 232);
+}
+
+.contact span:last-child{
+    background-color: rgb(209, 33, 153);
+}
+
+textarea{
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin:10px 0px 10px;
+}
+
+.but-giv{
+    padding:10px 15px 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(52, 157, 255);
+    color:rgb(255, 255, 255);
+    font-size: small;
+    border: 0px;
+}
+
+.footer{
+    margin-top: 30px;;
+}
+
+.footer img{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.footer .product{
+    padding-left: 10px;
+}
+.footer .price{
+    padding-left: 480px;
+}

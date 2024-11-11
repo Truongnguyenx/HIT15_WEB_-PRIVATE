@@ -1,0 +1,98 @@
+/* selector cơ bản --> element / class / id / universal */
+
+/* group selector */
+h1,
+h2,
+h3{
+    color: red;
+}
+
+/* Descendant Selector -- thẻ p trong thẻ div có class="content" */ 
+.content p{
+    color: red;
+}
+
+/* child selector -- chọn tất cả các phần tử con trực tiếp (tương tự descendant selector) */
+
+/* sibling selector */
+.heading + .content{  /*Adjacent Sibling Selector: chọn phần tử cùng cấp đầu tiên sau phần tử cha */
+    background: red;
+}
+
+.heading ~ .content{ /* General Sibling Selector: chọn tất cả các phần tử cùng cấp sau phần tử cha*/
+    border-color:aliceblue;
+}
+
+/* Pseudo-class Selector: chọn phần tử trong trạng thái cụ thể */
+.wrap .item:first-child{  /* chọn phần tử đầu tiên*/
+    text-align: center;
+}
+
+.wrap .item:last-child{  /* chọn phần tử cuối */
+    box-shadow: 10px;
+}
+
+.wrap .item:nth-child(5){  /* chọn phần tử thứ 5 */
+    font-size: large;
+}
+
+button {
+    font-size: 32px;
+    padding: 8px 16px;
+  }
+  
+button:hover { /* :hover để chọn phần tử sẽ được style khi di chuột vào */
+    background: blue;
+    color: rgb(255, 255, 255);
+  }
+
+/* độ ưu tiên: !important --> inline style --> id --> class --> element */
+
+:root { /* giá trị biến */
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size-large: 20px;
+  }
+
+h1 {
+    color: var(--primary-color);
+    font-size: var(--font-size-large);
+  }
+  
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .card {
+    width: max-content;
+    background-color: #f1f1f1;
+  }
+  .card__image {
+    width: 100%;
+    max-width: 200px;
+  }
+  .card__content {
+    padding: 10px;
+  }
+  .card__title {
+    font-size: 20px;
+  }
+  .card__description {
+    font-size: 16px;
+  }
+  .card__button {
+    padding: 5px 10px;
+  }
+  .card__button--red {
+    background-color: red;
+    color: white;
+  }
+  .card__button--disable {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+  }
