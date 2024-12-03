@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff7e79, #8578de);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height:80%;
+    width: 80%;
+    box-shadow: 0px 0px 5px 0px rgb(86, 86, 86);
+}
+
+.cell{
+    border: solid 1px black;
+}
+
+.cell:nth-child(1){
+    grid-column: 1/9;
+    background-color: aliceblue;
+}
+.cell:nth-child(2){
+    grid-area: 2/1/6/6;
+    background-color: antiquewhite;
+}
+.cell:nth-child(3){
+    grid-column: 6/8;
+    background-color: lightblue;
+}
+.cell:nth-child(4){
+    grid-area:3/6/6/7;
+    background-color: rgb(246, 101, 101);
+}
+.cell:nth-child(5){
+    grid-area:3/7/6/8;
+    background-color: lightgray;
+}
+.cell:nth-child(6){
+    grid-area:2/8/4/9;
+    background-color: antiquewhite;
+}
+.cell:nth-child(7){
+    grid-area: 4/8/9/9;
+    background-color: aqua;
+}
+.cell:nth-child(8){
+    grid-column: 1/5;
+    background-color: aqua;
+}
+.cell:nth-child(9){
+    grid-area: 7/1/9/5;
+    background-color: aliceblue;
+}
+.cell:nth-child(10){
+    grid-area: 6/5/8/8;
+    background-color: aquamarine;
+}
+.cell:nth-child(11){
+    grid-column: 5/8;
+    background-color: violet;
+}
+.cell:nth-child(12){
+    grid-column: 1/9;
+    background-color: pink;
+}
