@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: linear-gradient(to right, red, orange);
+}
+
+/* .page{
+    height:100%;
+    width:100%;
+} */
+
+.header{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.header .logo{
+    width:10%;
+    height:10%;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:fill;
+}
+
+.header .menu{
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+
+.menu p:first-child{
+    background: var(--color);
+    background-clip: text;
+    color: transparent;
+}
+
+.head-button{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+button{
+    padding: 15px 25px 15px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.head-button button:first-child{
+    background: var(--color);
+    background-clip: text;
+    color: transparent;
+
+}
+
+.head-button button:last-child{
+    background: var(--color);
+    border: none;
+    color:white;
+}
+
+.content{
+    margin-top: 100px;
+    display: flex;
+    gap:100px;
+}
+
+.information{
+    width: 30%;
+    margin-left: 120px;
+}
+
+.information p:first-child{
+    background: var(--color);
+    background-clip: text;
+    color: transparent;
+}
+
+.information h1{
+    font-size: 60px;
+}
+
+.information div{
+    display: flex;
+}
+
+.information button{
+    background: var(--color);
+    border: none;
+    color:white;
+}
+
+.content .images{
+    position: relative;
+}
+
+.images img{
+    position: absolute;
+}
+
+.images .base{
+    width: 500px;
+    height: 360px;
+}
+
+.images .man{
+    height: 400px;
+    width:300px;
+}

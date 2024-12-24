@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.head-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.head-list li{
+    padding: 10px 20px;
+    background-color: blanchedalmond;
+    transition: all 1s ease;
+}
+
+.head-list li:hover{
+    background-color: rgb(119, 255, 255);
+    color:rgb(255, 4, 4);
+}

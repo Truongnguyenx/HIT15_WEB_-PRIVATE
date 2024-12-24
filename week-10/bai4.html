@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bai4</title>
+    </head>
+    <body>
+        <script>
+            let input = prompt("nhập các số, cách nhau bằng dấu phẩy (,)")
+            let numberStrings = input.split(",")
+            let numbers = []
+
+            for (let i = 0; i < numberStrings.length; i++) {
+                numbers.push(Number(numberStrings[i]))
+            }
+
+            let max = numbers[0]
+            let min = numbers[0]
+            let count = 0
+
+            for (let number of numbers) {
+                if (number > max) 
+                    max = number
+                if (number < min) 
+                    min = number
+                if (number % 2 === 0) 
+                    count++
+            }
+
+            alert(`Số lớn nhất: ${max} \n Số nhỏ nhất: ${min} \n Số chẵn: ${count}`)
+
+        </script>
+    </body>
+</html>

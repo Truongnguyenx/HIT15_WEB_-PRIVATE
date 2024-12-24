@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bai1</title>
+    </head>
+    <body>
+        <script>
+            let day = prompt("Hôm nay là ngày gì?")
+            formatDay = day[0].toUpperCase() + day.slice(1).toLowerCase() 
+            if(formatDay == "Sunday" || formatDay == "Saturday"){
+                alert(`${formatDay} is a weekend.`)
+            }
+            else if(formatDay == "Monday" || formatDay == "Tuesday" || formatDay == "Wenesday" || formatDay == "Thursday" || formatDay == "Friday"){
+                alert(`${formatDay} is a working day.`)
+            }
+            else{
+                alert(`${formatDay} is not a day.`)
+            }
+        </script>
+    </body>
+</html>

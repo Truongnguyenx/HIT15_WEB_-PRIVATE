@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bai2</title>
+    </head>
+    <body>
+        <script>
+            let month = prompt("nhập tháng của bạn")
+            formatMonth = month[0].toUpperCase() + month.slice(1).toLowerCase()
+            switch(formatMonth){
+                case "January":
+                case "March":
+                case "May":
+                case "July": 
+                case "August": 
+                case "October": 
+                case "December":
+                    alert(`${formatMonth} has 31 days`)
+                    break
+                case "Febuary":
+                    alert(`${formatMonth} has 28 days`);
+                    break;
+                case "April": 
+                case "June": 
+                case "September": 
+                case "November":
+                    alert(`${formatMonth} has 30 days`);
+                    break;
+                default:
+                alert(`${formatMonth} is not valid`);
+            }
+        </script>
+    </body>
+</html>
