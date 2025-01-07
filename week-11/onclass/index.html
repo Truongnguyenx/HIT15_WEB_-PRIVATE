@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title" id="first-title">First Title</h1>
+      <h1 class="title" id="second-title">Second Title</h1>
+      <h1 class="title" id="third-title">Third Title</h1>
+      <h1></h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+
+  <body>
+     <ul></ul> 
+    <script>
+      // const ul = document.querySelector("ul")
+      const ul = document.createElement("ul")
+      let li;
+      for(let i=1; i <= 3; i++){
+        li = document.createElement("li")
+        li.className = "item"
+        li.style.color = "green"
+        li.style.fontSize = "32px"
+        li.style.listStyle = "none"
+        li.textContent = `Item ${i}`
+        ul.appendChild(li)
+      }
+      document.body.appendChild(ul)
+
+      const lastLi = document.querySelector("ul li:last-child")
+      ul.removeChild(lastLi)
+
+      console.log(lastLi)
+    </script>
+  </body>
+</html>
+-->

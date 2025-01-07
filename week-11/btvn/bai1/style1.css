@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 238, 215);
+}
+
+.container{
+    padding: 10% 30%;
+}
+
+.container .output{
+    border: 3px solid rgb(255, 161, 93);
+    border-radius:15px;
+    padding:15px 10px;
+}
+
+.container .title{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.container .input-table{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(255, 161, 93);
+    padding:30px 30px;
+    border-radius: 20px;
+}
+
+.input-table label{
+    color:rgb(255, 238, 215);
+}
+
+.input-table input{
+    padding:15px 15px;
+    border:none;
+    border-radius: 20px;
+    outline:none;
+    margin-bottom: 15px;
+}
+
+.input-table button{
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 17px;
+    background-color: white;
+}
+
