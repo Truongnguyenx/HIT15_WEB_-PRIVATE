@@ -5,25 +5,24 @@ const oddCounted = document.querySelector(".oddCount")
 const primeCounted = document.querySelector(".primeCount")
 const numTable = document.querySelector(".numTable")
 
+function isEven(number){
+    return number % 2 == 0
+}
+
+function isOdd(number){
+    return number %2 != 0
+}
+
+function isPrime(number){
+    if(number < 2) return false
+    for(let i = 2; i <= Math.sqrt(number); i++){
+        if(number % i === 0) return false
+    }
+    return true
+}
+
 button.addEventListener("click", function(){
     const numbers = parseInt(input.value)
-
-    console.log(numbers)
-    function isEven(number){
-        return number % 2 == 0
-    }
-
-    function isOdd(number){
-        return number %2 != 0
-    }
-
-    function isPrime(number){
-        if(number < 2) return false
-        for(let i = 2; i <= Math.sqrt(number); i++){
-            if(number % i === 0) return false
-        }
-        return true
-    }
 
     let evenCount = 0
     let oddCount = 0

@@ -46,3 +46,97 @@
   </body>
 </html>
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker v1.0</title>
+    <style>
+        body {
+            background-color: #0d0d2b;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1a1a3d;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .container h1 {
+            color: #ffcc00;
+        }
+        .input-field {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        .check-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00cc66;
+            color: #fff;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 10px;
+        }
+        .char-box {
+            display: inline-block;
+            padding: 5px;
+            margin: 2px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .char-box.red {
+            background-color: #ff4d4d;
+        }
+        .char-box.green {
+            background-color: #00cc66;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Palindrome Checker v1.0</h1>
+        <input type="text" id="inputText" class="input-field" value="adsxw">
+        <button class="check-button" onclick="checkPalindrome()">Check</button>
+        <div id="result" class="result"></div>
+        <div id="charBoxes" class="result"></div>
+    </div>
+
+    <script>
+        function checkPalindrome() {
+            const inputText = document.getElementById('inputText').value;
+            const result = document.getElementById('result');
+            const charBoxes = document.getElementById('charBoxes');
+            const reversedText = inputText.split('').reverse().join('');
+            let isPalindrome = inputText === reversedText;
+
+            result.textContent = isPalindrome ? 'Đây là palindrome.' : 'Đây không phải palindrome.';
+            charBoxes.innerHTML = '';
+
+            for (let i = 0; i < inputText.length; i++) {
+                const charBox = document.createElement('span');
+                charBox.textContent = inputText[i];
+                charBox.classList.add('char-box');
+                charBox.classList.add(inputText[i] === reversedText[i] ? 'green' : 'red');
+                charBoxes.appendChild(charBox);
+            }
+        }
+
+        // Initial check
+        checkPalindrome();
+    </script>
+</body>
+</html>

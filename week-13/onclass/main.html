@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // const text = " JavaScript is fun ";
+            // console.log(text.slice(1, 5) + "......." + text.slice(-4))
+
+            // console.log(text.substring(12,14))
+            // console.log(text.trim())
+
+            // console.log(text.includes("Java")); // true
+            // console.log(text.includes("script")); // false (phân biệt chữ hoa/chữ thường)
+            // console.log(text.includes("Java", 5))
+
+            // const text2 = "apple,banana,cherry";
+            // console.log(text2.split(",")); // ["apple", "banana", "cherry"]
+            // console.log(text2.split(",", 2)); // ["apple", "banana"]
+            // console.log(text2.split(""));
+
+            // console.log(text.at(-2))
+
+            // console.log(text.replace("JavaScript", "HTML"))
+            // console.log(text)
+            
+            // console.log(text.repeat(2))
+
+            const arr = [1, 2];
+            arr.push(3, 4);
+            console.log(arr); 
+
+            // lastElement = arr.pop()
+            // console.log(arr)
+            // console.log(lastElement)
+
+            arr.splice(1,2,7,8,9)
+            console.log(arr)
+
+            const newArr = arr.slice(-2)
+            console.log(newArr)
+
+            const arr1 = [1, 2];
+            const arr2 = [3, 4];
+            const newArr2 = arr1.concat(arr2);
+            console.log(newArr2)
+
+            const arr3 = ["apple", "banana", "cherry"];
+            console.log(arr3.join(" - "));
+
+            console.log(arr3.reverse())
+
+            const arr4 = [10 , 'd', 'a', 3, 5];
+            arr4.sort((a, b) => a - b)
+            console.log(arr4)
+
+        </script>
+    </body>
+</html>
